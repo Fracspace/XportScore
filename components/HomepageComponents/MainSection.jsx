@@ -201,6 +201,7 @@ function MainSection() {
           </div>
         ))}
       </div>
+      
 
       {/* Pillars + How It Works */}
       <div className="grid lg:grid-cols-3 gap-10 mt-12">

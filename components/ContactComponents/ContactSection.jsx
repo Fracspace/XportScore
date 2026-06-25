@@ -25,26 +25,27 @@ function ContactSection() {
                     label: "GENERAL SUPPORT",
                     value: "support@xportscore.com",
                     desc: "24/7 ticket response for active audit cycles."
-                  },
-                  {
-                    icon: Handshake,
-                    label: "PARTNERSHIPS",
-                    value: "partners@xportscore.com",
-                    desc: "For government agencies and trade associations."
-                  },
-                  {
-                    icon: Phone,
-                    label: "PHONE / WHATSAPP",
-                    value: "+1 (555) 012-3456",
-                    desc: "Available Mon–Fri, 9:00 AM – 6:00 PM EST."
-                  },
-                  {
-                    icon: MapPin,
-                    label: "REGISTERED ADDRESS",
-                    value:
-                      "100 Trade Tower, Suite 400 Financial District, NY 10004",
-                    desc: ""
                   }
+
+                  // {
+                  //   icon: Handshake,
+                  //   label: "PARTNERSHIPS",
+                  //   value: "partners@xportscore.com",
+                  //   desc: "For government agencies and trade associations."
+                  // }
+                  // {
+                  //   icon: Phone,
+                  //   label: "PHONE / WHATSAPP",
+                  //   value: "+1 (555) 012-3456",
+                  //   desc: "Available Mon–Fri, 9:00 AM – 6:00 PM EST."
+                  // },
+                  // {
+                  //   icon: MapPin,
+                  //   label: "REGISTERED ADDRESS",
+                  //   value:
+                  //     "100 Trade Tower, Suite 400 Financial District, NY 10004",
+                  //   desc: ""
+                  // }
                 ].map((item) => {
                   const Icon = item.icon;
 
@@ -80,13 +81,13 @@ function ContactSection() {
               </div>
 
               {/* Map */}
-              <div className="mt-5 overflow-hidden rounded-xl">
+              {/* <div className="mt-5 overflow-hidden rounded-xl">
                 <img
                   src="/images/contact-map.jpg"
                   alt="Map"
                   className="h-[220px] w-full object-cover"
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side Form */}
@@ -158,6 +159,7 @@ function ContactSection() {
                 </div>
 
                 <button
+                  onClick={(e) => e.preventDefault()}
                   type="submit"
                   className="flex w-full items-center justify-center gap-2 rounded-md bg-[#041B4D] px-6 py-4 font-medium text-white transition hover:bg-[#062766]"
                 >
